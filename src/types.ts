@@ -1,7 +1,3 @@
-type Style = {
-  [key: string]: string | number | boolean
-}
-
 export interface AvatarConfig {
   face: number
   eye: number
@@ -21,12 +17,13 @@ export interface BackgroundShape {
   square?: number
 }
 
+export type ShapeTypes = 'circle' | 'rounded' | 'square'
+
 export interface NotionAvatarProps {
-  className?: string
-  style?: Style
-  shape?: 'circle' | 'rounded' | 'square'
+  class?: string
+  shape?: ShapeTypes
   bgColor?: string
-  config?: AvatarConfig
+  config: AvatarConfig
 }
 
 export type AvatarPart = keyof AvatarConfig

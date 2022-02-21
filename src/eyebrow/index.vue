@@ -1,5 +1,5 @@
 <template>
-  <Eyebrow0 v-if="props.type === 0" />
+  <Eyebrow0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Eyebrow1 v-if="props.type === 1" />
   <Eyebrow2 v-if="props.type === 2" />
   <Eyebrow3 v-if="props.type === 3" />

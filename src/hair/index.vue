@@ -1,5 +1,5 @@
 <template>
-  <Hair0 v-if="props.type === 0" />
+  <Hair0 v-if="props.type === 0 || props.type < 0 || props.type > 30" />
   <Hair1 v-if="props.type === 1" />
   <Hair2 v-if="props.type === 2" />
   <Hair3 v-if="props.type === 3" />

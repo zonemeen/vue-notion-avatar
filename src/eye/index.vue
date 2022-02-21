@@ -1,5 +1,5 @@
 <template>
-  <Eye0 v-if="props.type === 0" />
+  <Eye0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Eye1 v-if="props.type === 1" />
   <Eye2 v-if="props.type === 2" />
   <Eye3 v-if="props.type === 3" />

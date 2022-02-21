@@ -1,5 +1,5 @@
 <template>
-  <Glass0 v-if="props.type === 0" />
+  <Glass0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Glass1 v-if="props.type === 1" />
   <Glass2 v-if="props.type === 2" />
   <Glass3 v-if="props.type === 3" />

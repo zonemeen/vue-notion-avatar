@@ -1,5 +1,5 @@
 <template>
-  <Beard0 v-if="props.type === 0" />
+  <Beard0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Beard1 v-if="props.type === 1" />
   <Beard2 v-if="props.type === 2" />
   <Beard3 v-if="props.type === 3" />

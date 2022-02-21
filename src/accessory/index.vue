@@ -1,5 +1,5 @@
 <template>
-  <Accessory0 v-if="props.type === 0" />
+  <Accessory0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Accessory1 v-if="props.type === 1" />
   <Accessory2 v-if="props.type === 2" />
   <Accessory3 v-if="props.type === 3" />

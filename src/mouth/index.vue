@@ -1,5 +1,5 @@
 <template>
-  <Mouth0 v-if="props.type === 0" />
+  <Mouth0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Mouth1 v-if="props.type === 1" />
   <Mouth2 v-if="props.type === 2" />
   <Mouth3 v-if="props.type === 3" />

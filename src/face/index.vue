@@ -1,5 +1,5 @@
 <template>
-  <Face0 v-if="props.type === 0" />
+  <Face0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Face1 v-if="props.type === 1" />
   <Face2 v-if="props.type === 2" />
   <Face3 v-if="props.type === 3" />

@@ -1,16 +1,45 @@
 {
   "name": "vue-notion-avatar",
-  "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/notion.umd.js",
+  "module": "./dist/notion.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/notion.es.js",
+      "require": "./dist/notion.umd.js"
+    }
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zonemeen/vue-notion-avatar.git"
+  },
+  "keywords": [
+    "vue",
+    "avatar",
+    "notion",
+    "vue-avatar",
+    "notion-style avatar"
+  ],
+  "author": "zonemeen <miqilin18@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zonemeen/vue-notion-avatar/issues"
+  },
+  "homepage": "https://github.com/zonemeen/vue-notion-avatar#readme",
   "dependencies": {
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@types/node": "^17.0.18",
     "@vitejs/plugin-vue": "^2.2.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4",

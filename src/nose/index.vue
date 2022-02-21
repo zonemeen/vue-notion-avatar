@@ -1,5 +1,5 @@
 <template>
-  <Nose0 v-if="props.type === 0" />
+  <Nose0 v-if="props.type === 0 || props.type < 0 || props.type > 10" />
   <Nose1 v-if="props.type === 1" />
   <Nose2 v-if="props.type === 2" />
   <Nose3 v-if="props.type === 3" />
