@@ -20,7 +20,6 @@ export interface BackgroundShape {
 export type ShapeTypes = 'circle' | 'rounded' | 'square'
 
 export interface NotionAvatarProps {
-  class?: string
   shape?: ShapeTypes
   bgColor?: string
   config: AvatarConfig

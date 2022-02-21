@@ -1,5 +1,7 @@
 <template>
-  <NotionAvatar bgColor="#debaba" :config="config" />
+  <div class="flex items-center justify-center">
+    <NotionAvatar class="w-48 h-48" bgColor="#debaba" :config="config" />
+  </div>
 </template>
 
 <script setup lang="ts">
