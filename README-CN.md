@@ -1,18 +1,18 @@
 # vue-notion-avatar
 
 <div align="center">
-    <img src='https://cdn.jsdelivr.net/gh/zonemeen/static@master/img/example.gif' alt='imagewall' />
+    <img src="https://cdn.jsdelivr.net/gh/miqilin21/static@master/img/example.gif" alt="imagewall" />
 
-[简体中文](./README-CN.md)
+[Read In English](./README.md)
 
 </div>
 
-## Assets
+## 设计资源
 
-- Designer: [@Felix Wong](https://www.producthunt.com/@felix12777) on ProductHunt
-- Pack of illustrations: [Noto avatar](https://abstractlab.gumroad.com/l/noto-avatar)
+- 设计师: [@Felix Wong](https://www.producthunt.com/@felix12777) on ProductHunt
+- 素材来源: [Noto avatar](https://abstractlab.gumroad.com/l/noto-avatar)
 
-## Installation
+## 安装
 
 ```sh
 npm install vue-notion-avatar
@@ -24,13 +24,13 @@ or
 yarn add vue-notion-avatar
 ```
 
-## Usage
+## 使用
 
-1. Import the component.
+1. 导入该组件。
    ```js
    import NotionAvatar, { getRandomConfig } from 'vue-notion-avatar'
    ```
-2. Set the required config attribute, so that you can always rendering a same avatar with the configuration.
+2. 必须设置 config 属性，这样你就可以固定用这个配置渲染同一个头像。
 
    ```js
    const config = {
@@ -47,24 +47,21 @@ yarn add vue-notion-avatar
    }
    ```
 
-   or generate a random config
+   或随机生成 config
 
    ```js
    const config = getRandomConfig()
    ```
 
-   `tip`: config is an Object, please check the **Attributes** below for what attributes can be passed in.
+   `提示`: `config` 是一个对象，请查看下面的**属性**，了解有哪些属性可以被传入。
 
-3. Render the component like:
-
+3. 以特定的宽度/高度和配置来渲染组件，比如。
    ```jsx
    <template>
      <NotionAvatar style={{ width: '6rem', height: '6rem' }} config={config} />
    </template>
    ```
-
    or
-
    ```jsx
    <template>
      <NotionAvatar
@@ -76,9 +73,9 @@ yarn add vue-notion-avatar
    </template>
    ```
 
-## Attributes
+## 属性
 
-The Attributes can be passed into config
+以下这些属性可以被写入 `config` 中：
 
 | key         | type   | default | accept |
 | ----------- | ------ | ------- | ------ |
@@ -93,7 +90,7 @@ The Attributes can be passed into config
 | `beard`     | number | 0       | 0~10   |
 | `detail`    | number | 0       | 0~10   |
 
-or as React props
+或作为 `React props` 属性传入：
 
 | key       | type   | default  | options                              | tips                 |
 | --------- | ------ | -------- | ------------------------------------ | -------------------- |
@@ -101,35 +98,35 @@ or as React props
 | `shape`   | string | 'circle' | 'circle' , 'rounded' , 'square'      | Only for React Props |
 | `bgColor` | string |          | Hexadecimal , RGB , HSL , Predefined | Only for React Props |
 
-## Development
+## 项目开发
 
-1. Clone the repo:
+1. 克隆项目至本地：
    ```sh
-   $ git clone git@github.com:zonemeen/vue-notion-avatar.git
+   $ git clone git@github.com:miqilin21/vue-notion-avatar.git
    $ cd vue-notion-avatar
    ```
-2. Install dependencies:
+2. 安装项目依赖：
    ```sh
    $ yarn
    ```
-   Or
+   或
    ```sh
    $ npm install
    ```
-3. Start the server for the example:
+3. 运行项目：
    ```sh
    $ yarn dev
    ```
-   Or
+   或
    ```sh
    $ npm run dev
    ```
-4. Open the browser to reivew the example:
+4. 打开浏览器预览：
    ```sh
    $ open http://localhost:3000
    ```
-5. Edit the files inside [src](/src).
+5. 编辑 [src](/src) 里面的文件。
 
-## License
+## 许可证
 
-Released under [MIT](/LICENSE) by [@zonemeen](https://github.com/zonemeen).
+由[@zonemeen](https://github.com/zonemeen)发布的基于[MIT](/LICENSE)协议许可证。
