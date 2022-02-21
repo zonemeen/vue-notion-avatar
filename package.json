@@ -1,10 +1,11 @@
 {
   "name": "vue-notion-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "prepublishOnly": "yarn build",
+    "release": "npx bumpp --commit --tag --push && npm publish"
   },
   "files": [
     "dist"
