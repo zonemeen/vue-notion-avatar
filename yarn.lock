@@ -430,7 +430,7 @@ character-parser@^2.2.0:
   dependencies:
     is-regex "^1.0.3"
 
-chokidar@^3.5.3:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
@@ -873,6 +873,11 @@ ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
+
+immutable@^4.0.0:
+  version "4.0.0"
+  resolved "http://192.168.0.240/nexus/repository/npm-public/immutable/-/immutable-4.0.0.tgz#b86f78de6adef3608395efb269a91462797e2c23"
+  integrity sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw==
 
 import-fresh@^3.2.1:
   version "3.3.0"
@@ -1323,6 +1328,15 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+sass@^1.49.10:
+  version "1.49.10"
+  resolved "http://192.168.0.240/nexus/repository/npm-public/sass/-/sass-1.49.10.tgz#7b83cee0f03bbba443111b3f94944fde2b0c7a6b"
+  integrity sha512-w37zfWJwKu4I78U4z63u1mmgoncq+v3iOB4yzQMPyAPVHHawaQSnu9C9ysGQnZEhW609jkcLioJcMCqm75JMdg==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
+    source-map-js ">=0.6.2 <2.0.0"
+
 semver@^7.3.5:
   version "7.3.5"
   resolved "https://registry.npmmirror.com/semver/-/semver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
@@ -1352,7 +1366,7 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-source-map-js@^1.0.2:
+"source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
